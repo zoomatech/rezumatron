@@ -8,19 +8,35 @@ A proprietary prompt engineering system that tailors resumes to job descriptions
 
 ## The Problem
 
-Traditional AI resume writers have a fatal flaw: **they hallucinate**. They invent job titles, fabricate achievements, and create experiences that never happened. This makes them completely unusable for professional applications where accuracy matters.
+### The Job Market Reality
 
-When I tried using ChatGPT and Claude to optimize my resume for different roles, the results were impressive—but fictional. The AI would:
-- Invent certifications I didn't have
-- Exaggerate metrics beyond reality
-- Create hybrid job titles that never existed
-- Attribute achievements to the wrong roles
-- Fabricate technical skills I'd never used
+I was sending what I thought were solid resumes to roles that seemed perfect for me. Nothing. Not even rejections.
 
-**This wasn't just inaccurate—it was career-damaging.**
+After talking with tech professionals, recruiters, and career advisors, I started understanding the math. Most recruiters and hiring experts will tell you that every resume gets reviewed—and I believe they try. The standard advice is that you get about 7 seconds of attention.
+
+But here's the problem: when 1,000 people apply for one position, even at 7 seconds each, that's nearly two hours of continuous reading just to scan them all. And that's if someone could actually absorb meaningful information in 7-second bursts for two hours straight.
+
+In practice, ATS systems and AI filters handle the first pass. Not because recruiters are lazy—because it's the only way the math works.
+
+**This creates a challenge for job seekers:**
+- You need volume—enough applications to beat 999:1 odds
+- Each resume needs sharp alignment to the job description—no clutter, no irrelevant information
+- Tailoring manually takes 2+ hours per resume
+- At that pace, you can't generate enough applications
+
+### The AI Solution... That Wasn't
+
+I tried ChatGPT and Claude to speed things up. The results looked great—but they were fiction.
+
+The AI invented:
+- Certifications I didn't have
+- Metrics that weren't real
+- Job titles I'd never held
+- Skills I'd never used
+
+One fabricated credential could destroy my credibility in an interview or background check. I needed AI speed with human accuracy.
 
 ---
-
 ## The Solution
 
 I developed Rezumatron using **controlled RAG (Retrieval-Augmented Generation)** architecture to eliminate hallucinations while maintaining optimization capabilities.
@@ -30,9 +46,13 @@ I developed Rezumatron using **controlled RAG (Retrieval-Augmented Generation)**
 Unlike traditional AI generation that produces open-ended text, Rezumatron:
 - **Only selects** from pre-verified experiences in a master resume
 - **Never generates** new content or achievements
-- **Ranks and filters** experiences by relevance to target role
+- **Ranks and prioritizes** experiences by relevance to target role
 - **Validates** every selection against source material
-- **Guarantees** 100% factual accuracy
+- **Maintains** 100% factual accuracy (zero hallucinations, even in incomplete runs)
+- 
+Rather than generating new content, the system analyzes requirements, scores your actual experiences for relevance, prioritizes them, and assembles them strategically for each specific role.
+
+---
 
 Think of it as a highly intelligent filter rather than a creative writer.
 
@@ -44,7 +64,7 @@ Think of it as a highly intelligent filter rather than a creative writer.
 All career experiences are maintained in a specially formatted master document with:
 - Domain labels identifying industry/context
 - Experience labels categorizing each achievement by skill type
-- Comprehensive detail with quantifiable metrics
+- Detailed achievements with quantifiable metrics
 - Complete technology and methodology listings
 
 ### 2. Multi-Stage Prompt Pipeline
@@ -67,21 +87,28 @@ Built-in validation prevents common AI failures:
 ## Results
 
 ### Performance Metrics
-- ⚡ **Speed**: 15 minutes per tailored resume (vs. 2 hours manual)
-- ✅ **Accuracy**: 100% factual (zero hallucinations)
-- 🎯 **Relevance**: Optimized keyword alignment for ATS
-- 📊 **Scalability**: One master resume → unlimited targeted versions
+- **Speed**: 15 minutes per tailored resume (vs. 2 hours manual)
+- **Accuracy**: 100% factual (zero hallucinations in completed runs)
+- **Relevance**: Keyword alignment optimized for ATS screening
+- **Scalability**: One master resume generates unlimited targeted versions
 
 ### Real-World Impact
 - Reduced resume tailoring time by 88%
-- Maintained perfect accuracy across 50+ iterations
-- Enabled targeted applications at scale
+- Maintained 100% accuracy across 50+ iterations
+- Enabled high-volume targeted applications
 - Demonstrated practical prompt engineering capabilities
 
+### Performance Notes
+*Last tested: October 2025*
+
+Current completion rates based on real-world usage:
+- **Claude (Anthropic)**: ~90% successful completion, occasional clarification needed
+- **ChatGPT (OpenAI)**: Significantly lower reliability, frequent issues
+- **Factual accuracy**: 100% - zero hallucinations in both successful and partial runs
+
+System continues to be refined based on ongoing use.
+
 ---
-
-## Technical Highlights
-
 ### Prompt Engineering
 - Multi-stage pipeline architecture
 - Explicit scoring criteria with weighted dimensions
@@ -97,7 +124,7 @@ Built-in validation prevents common AI failures:
 ### System Design
 - Modular prompt structure for maintainability
 - Clear separation of concerns across stages
-- Comprehensive error detection
+- Built-in error detection
 - Reproducible and testable outputs
 
 ---
@@ -113,7 +140,6 @@ This project showcases:
 - **Documentation**: Clear articulation of technical approach
 
 ---
-
 ## Use Cases
 
 ### Personal Use
@@ -133,12 +159,12 @@ This project showcases:
 ## Project Status
 
 **Status**: Production-ready, actively used  
-**Development Timeline**: July 2023 - Present  
+**Development Timeline**: June 2025 - Present  
 **Version**: 2.0 (Modular Pipeline Architecture)
 
 ### Evolution
-- **v1.0** (July 2023): Single-prompt monolithic system
-- **v2.0** (August 2024): Multi-stage modular pipeline
+- **v1.0** (June 2025): Single-prompt monolithic system
+- **v2.0** (October 2025): Multi-stage modular pipeline
 - **Current**: Enhanced with outlier detection and balanced ranking
 
 ---
@@ -186,7 +212,7 @@ Each stage has explicit inputs, outputs, and validation criteria.
 - Enables accurate relevance scoring
 - Provides clear domain context
 - Facilitates automated selection
-- Supports comprehensive coverage verification
+- Supports complete coverage verification
 
 ---
 
@@ -202,7 +228,7 @@ Each stage has explicit inputs, outputs, and validation criteria.
 - Iterative prompt engineering with systematic testing
 - A/B testing of different prompt strategies
 - Validation across 50+ real job descriptions
-- Continuous refinement based on output quality
+- Ongoing refinement based on real-world use
 
 ---
 
