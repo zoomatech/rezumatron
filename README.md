@@ -1,7 +1,6 @@
 # Rezumatron
-### By Steven J. Swart
-
 **AI-Powered Resume Optimization Framework with Zero Hallucination**
+### By Steven J. Swart
 
 A proprietary prompt engineering system that tailors resumes to job descriptions while maintaining 100% factual accuracy.
 
