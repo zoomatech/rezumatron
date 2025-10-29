@@ -48,8 +48,7 @@ Unlike traditional AI generation that produces open-ended text, Rezumatron:
 - **Never generates** new content or achievements
 - **Ranks and prioritizes** experiences by relevance to target role
 - **Validates** every selection against source material
-- **Maintains** 100% factual accuracy (zero hallucinations, even in incomplete runs)
-- 
+- **Maintains** 100% factual accuracy (zero hallucinations, even in incomplete runs) 
 Rather than generating new content, the system analyzes requirements, scores your actual experiences for relevance, prioritizes them, and assembles them strategically for each specific role.
 
 ---
