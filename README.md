@@ -163,7 +163,7 @@ This project showcases:
 
 ### Evolution
 - **v1.0** (June 2025): Single-prompt monolithic system
-- **v2.0** (October 2025): Multi-stage modular pipeline
+- **v2.0** (September 2025): Multi-stage modular pipeline
 - **Current**: Enhanced with outlier detection and balanced ranking
 
 ---
