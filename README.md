@@ -1,4 +1,5 @@
 # Rezumatron
+** By Steven J. Swart **
 
 **AI-Powered Resume Optimization Framework with Zero Hallucination**
 
